@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consumo por Hora</title>
+</head>
+<body>
+    <h1>Consumo por Hora</h1>
+    <% data.forEach((dia) => { %>
+        <h2><%= dia.data %> - <%= dia.dia %></h2>
+        <ul>
+            <% Object.keys(dia).forEach(key => {
+                if (key.startsWith('h')) { %>
+                <li><%= key %>: <%= dia[key] %> kWh</li>
+            <% } }); %>
+            <li><strong>Total:</strong> <%= dia.total %> kWh</li>
+        </ul>
+    <% }); %>
+</body>
+</html>

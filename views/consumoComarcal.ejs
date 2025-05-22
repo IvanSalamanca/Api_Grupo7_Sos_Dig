@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consumo por Comarca</title>
+</head>
+<body>
+    <h1>Consumo por Comarca</h1>
+    <ul>
+        <% data.forEach((item, index) => { %>
+            <li>
+                <strong><%= item.comarca %></strong> - <%= item.municipi %> - <%= item.consum_kwh %> kWh
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

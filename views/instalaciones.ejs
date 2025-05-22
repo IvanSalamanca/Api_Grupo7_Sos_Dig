@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instalaciones</title>
+</head>
+<body>
+    <h1>Instalaciones</h1>
+    <ul>
+        <% data.forEach((instalacion, index) => { %>
+            <li>
+                <strong>ID:</strong> <%= instalacion.id %> -
+                <strong>Nombre:</strong> <%= instalacion.nombre %> -
+                <strong>Ubicación:</strong> <%= instalacion.ubicacion %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

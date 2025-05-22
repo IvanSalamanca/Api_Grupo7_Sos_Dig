@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>Bienvenido <%= user ? user.username : 'Invitado' %></h1>
+    <% if (user) { %>
+        <a href="/logout">Cerrar sesión</a>
+    <% } else { %>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Usuario">
+            <input type="password" name="password" placeholder="Contraseña">
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    <% } %>
+</body>
+</html>

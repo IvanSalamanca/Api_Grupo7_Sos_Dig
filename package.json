@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanSalamanca/Api_Grupo7_Sos_Dig.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanSalamanca/Api_Grupo7_Sos_Dig/issues"
+  },
+  "homepage": "https://github.com/IvanSalamanca/Api_Grupo7_Sos_Dig#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "db-local": "^3.1.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
